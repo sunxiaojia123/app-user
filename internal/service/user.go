@@ -30,7 +30,6 @@ func (u *UserService) CreateUser(ctx context.Context, req *v1.CreateUserRequest)
 	if err != nil {
 		return nil, err
 	}
-
 	userInfoRsp := v1.CreateUserReply{
 		Id: user.ID,
 	}
